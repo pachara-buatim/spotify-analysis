@@ -1,5 +1,5 @@
-Spotify Analysis: Exploring the Audio Features of the Most-Streamed Songs
-1. Introduction
+# Spotify Analysis: Exploring the Audio Features of the Most-Streamed Songs
+## Introduction
 
 As a music producer, I've always been curious about what makes a song successful in terms of streaming.
 
@@ -7,7 +7,7 @@ Marketing, artist popularity, and playlist placements all play important roles i
 
 This curiosity inspired me to start this project. I wanted to explore the audio characteristics of the most-streamed songs on Spotify and identify patterns that might provide insights into what these tracks have in common.
 
-2. Project Objective
+## Project Objective
 
 The main objective of this project is to explore the audio characteristics of the 100 most-streamed songs in the dataset.
 
@@ -19,7 +19,7 @@ What are the average energy, danceability, acousticness, liveness, instrumentaln
 Are there any interesting relationships between these audio features?
 The goal is to understand the musical characteristics shared by these popular tracks, rather than to establish a definitive formula for streaming success.
 
-3. Dataset and Data Preparation
+## Dataset and Data Preparation
 
 For this project, I obtained a Spotify dataset from Kaggle. The dataset was relatively clean, although some missing values were present.
 
@@ -28,35 +28,35 @@ To focus on the most successful tracks in terms of streaming numbers, I sorted t
 The dataset includes several audio features:
 
 
-Feature	Description
-BPM	Tempo of a track, measured in beats per minute
-Key	The estimated musical key of a track
-Mode	Whether a track is in a major or minor mode
-Energy	A measure of perceived intensity and activity
-Danceability	How suitable a track is for dancing
-Acousticness	An estimate of how likely a track is to be acoustic
-Liveness	An estimate of the likelihood that a track was performed live
-Instrumentalness	An estimate of whether a track contains no vocals
-Valence	A measure of the musical positivity conveyed by a track
-Data Preparation
+### Feature	Description
+• BPM	Tempo of a track, measured in beats per minute.
+• Key	The estimated musical key of a track.
+• Mode	Whether a track is in a major or minor mode.
+• Energy	A measure of perceived intensity and activity.
+• Danceability	How suitable a track is for dancing.
+• Acousticness	An estimate of how likely a track is to be acoustic.
+• Liveness	An estimate of the likelihood that a track was performed live.
+• Instrumentalness	An estimate of whether a track contains no vocals.
+• Valence	A measure of the musical positivity conveyed by a track.
+
+### Data Preparation
 
 The main preparation steps were:
 
-Checked the dataset for missing values.
-Sorted tracks by stream count in descending order.
-Selected the top 100 most-streamed tracks.
-Calculated average values for the numerical audio features.
-Identified the most frequently occurring musical key and mode.
+1. Checked the dataset for missing values.
+2. Sorted tracks by stream count in descending order.
+3. Selected the top 100 most-streamed tracks.
+4. Calculated average values for the numerical audio features.
+5. Identified the most frequently occurring musical key and mode.
 Screenshot: Data preparation and cleaning
 
 !Data preparation
 
-4. Exploratory Data Analysis
+## Exploratory Data Analysis
 
 After preparing the data, I calculated summary statistics for the audio features and examined the distribution of musical keys and modes.
 
-4.1 Summary of Findings
-
+## Summary of Findings
 
 Audio Feature	Result
 Average BPM	123
@@ -70,7 +70,7 @@ Average instrumentalness	0%
 Average valence	51%
 Note: Eleven tracks have missing key information. Instrumentalness is reported as 0%; this value should be checked against the underlying data and its rounding precision.
 
-4.2 Tempo
+### Tempo
 
 The average tempo of the top 100 tracks is 123 BPM.
 
@@ -80,7 +80,7 @@ Screenshot: BPM analysis
 
 !BPM analysis
 
-4.3 Musical Key and Mode
+### Musical Key and Mode
 
 C# is the most frequently occurring key among the tracks with available key data. However, 11 tracks have missing key information, which should be considered when interpreting the result.
 
@@ -92,7 +92,7 @@ Screenshot: Key and mode distribution
 
 !Key and mode analysis
 
-4.4 Energy and Danceability
+### Energy and Danceability
 
 The average energy is 65%, while average danceability is 63%.
 
@@ -106,7 +106,7 @@ Screenshot: Energy and danceability analysis
 
 !Energy and danceability
 
-4.5 Acousticness and Liveness
+### Acousticness and Liveness
 
 Average acousticness is 26%, while average liveness is 17%.
 
@@ -118,7 +118,7 @@ Screenshot: Acousticness and liveness analysis
 
 !Acousticness and liveness
 
-4.6 Instrumentalness
+### Instrumentalness
 
 The average instrumentalness is reported as 0%.
 
@@ -130,7 +130,7 @@ Screenshot: Instrumentalness analysis
 
 !Instrumentalness analysis
 
-4.7 Valence
+### Valence
 
 The average valence is 51%, which is close to the midpoint of the scale.
 
@@ -140,7 +140,7 @@ Screenshot: Valence analysis
 
 !Valence analysis
 
-5. Relationships Between Audio Features
+## Relationships Between Audio Features
 
 Based on the initial analysis, I became interested in two possible relationships:
 
@@ -156,7 +156,7 @@ Screenshot: Audio feature correlation heatmap
 
 !Audio feature correlation heatmap
 
-6. Key Takeaways
+## Key Takeaways
 
 Based on the analysis of the top 100 most-streamed tracks, several characteristics stand out:
 
@@ -169,7 +169,7 @@ Together, these results provide a descriptive overview of the audio characterist
 
 From a music production perspective, these patterns are interesting starting points for exploring how musical characteristics vary among popular songs.
 
-7. Limitations
+## Limitations
 
 There are several limitations to consider when interpreting these findings.
 
@@ -183,7 +183,7 @@ Correlation does not establish causation. Even if certain audio features are cor
 
 These limitations mean that the results should be treated as exploratory observations rather than a definitive explanation of streaming success.
 
-8. Final Dashboard
+## Final Dashboard
 
 The final dashboard brings the key findings together in one place, providing an overview of the most-streamed tracks and their audio characteristics.
 
@@ -191,7 +191,7 @@ Screenshot: Final Spotify analysis dashboard
 
 !Final Spotify analysis dashboard
 
-9. Conclusion
+## Conclusion
 
 This project began with a simple question: what do the most-streamed songs on Spotify have in common?
 
@@ -203,7 +203,7 @@ Instead, this analysis provides a starting point for further exploration into th
 
 As a music producer, I find this process valuable because it allows me to approach a familiar question from a data-driven perspective, using evidence to explore patterns rather than relying entirely on intuition.
 
-10. Tools and Technologies
+## Tools and Technologies
 
 Dataset: Spotify dataset from Kaggle
 Data preparation and analysis: [Add your tools here]
