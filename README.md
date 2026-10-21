@@ -49,7 +49,7 @@ The main preparation steps were:
 4. Calculated average values for the numerical audio features.
 5. Identified the most frequently occurring musical key and mode.
 
-<img width="700" src="./assets/data-preparation.png" alt="data preparation">
+<img src="./assets/data-preparation.png" alt="data preparation">
 
 ## Exploratory Data Analysis
 
@@ -75,7 +75,7 @@ The average tempo of the top 100 tracks is 123 BPM.
 
 This suggests that the selected tracks generally have a moderate-to-fast tempo. Such tempos are common in many pop and electronic music productions, although BPM alone cannot determine a song's genre or popularity.
 
-<img width="700" src="./assets/avg-bpm.png" alt="sql code of bpm analysis">
+<img src="./assets/avg-bpm.png" alt="sql code of bpm analysis">
 
 ### Musical Key and Mode
 
@@ -85,8 +85,8 @@ Major mode is more common than minor mode, appearing in 64 out of the 100 tracks
 
 This suggests that major-mode compositions are relatively common in this group. However, a major mode does not necessarily mean a song sounds happy, just as a minor mode does not necessarily make a song sound sad.
 
-<img width="700" src="./assets/most-used-key.png" alt="sql code of musical key analysis">
-<img width="700" src="./assets/most-used-mode.png" alt="sql code of musical mode analysis">
+<img src="./assets/most-used-key.png" alt="sql code of musical key analysis">
+<img src="./assets/most-used-mode.png" alt="sql code of musical mode analysis">
 
 ### Energy and Danceability
 
@@ -98,7 +98,7 @@ From a music production perspective, this is an interesting observation because 
 
 However, these averages alone do not establish whether energy and danceability are correlated or whether either feature contributes to higher streaming numbers.
 
-<img width="700" src="./assets/avg-energy-&-avg-dance.png" alt="sql code of musical energy analysis">
+<img src="./assets/avg-energy-&-avg-dance.png" alt="sql code of musical energy analysis">
 
 ### Acousticness and Liveness
 
@@ -108,7 +108,7 @@ These relatively low averages suggest that the tracks tend to have lower acousti
 
 This may be consistent with a tendency toward studio-produced music rather than predominantly acoustic or live-performance recordings. However, these features alone cannot establish how a track was produced or recorded.
 
-<img width="700" src="./assets/avg-acoustic-&-avg-liveness.png" alt="sql code of musical liveness analysis">
+<img src="./assets/avg-acoustic-&-avg-liveness.png" alt="sql code of musical liveness analysis">
 
 ### Instrumentalness
 
@@ -118,7 +118,7 @@ This suggests that instrumentalness scores are very low across the selected trac
 
 This result should therefore be interpreted as a characteristic of the dataset's instrumentalness scores rather than definitive proof that all 100 tracks contain vocals.
 
-<img width="700" src="./assets/avg-instrumentalness.png" alt="sql code of intrumentalness analysis">
+<img src="./assets/avg-instrumentalness.png" alt="sql code of intrumentalness analysis">
 
 ### Valence
 
