@@ -29,15 +29,15 @@ The dataset includes several audio features:
 
 
 ### Feature	Description
-• BPM	Tempo of a track, measured in beats per minute.
-• Key	The estimated musical key of a track.
-• Mode	Whether a track is in a major or minor mode.
-• Energy	A measure of perceived intensity and activity.
-• Danceability	How suitable a track is for dancing.
-• Acousticness	An estimate of how likely a track is to be acoustic.
-• Liveness	An estimate of the likelihood that a track was performed live.
-• Instrumentalness	An estimate of whether a track contains no vocals.
-• Valence	A measure of the musical positivity conveyed by a track.
+- **BPM:**	Tempo of a track, measured in beats per minute.
+- **Key:**	The estimated musical key of a track.
+- **Mode:**	Whether a track is in a major or minor mode.
+- **Energy:**	A measure of perceived intensity and activity.
+- **Danceability:**	How suitable a track is for dancing.
+- **Acousticness:**	An estimate of how likely a track is to be acoustic.
+- **Liveness:**	An estimate of the likelihood that a track was performed live.
+- **Instrumentalness:**	An estimate of whether a track contains no vocals.
+- **Valence:**	A measure of the musical positivity conveyed by a track.
 
 ### Data Preparation
 
@@ -48,9 +48,8 @@ The main preparation steps were:
 3. Selected the top 100 most-streamed tracks.
 4. Calculated average values for the numerical audio features.
 5. Identified the most frequently occurring musical key and mode.
-Screenshot: Data preparation and cleaning
 
-!Data preparation
+<img width="700" src="./assets/data-preparation.png" alt="data preparation">
 
 ## Exploratory Data Analysis
 
@@ -76,9 +75,7 @@ The average tempo of the top 100 tracks is 123 BPM.
 
 This suggests that the selected tracks generally have a moderate-to-fast tempo. Such tempos are common in many pop and electronic music productions, although BPM alone cannot determine a song's genre or popularity.
 
-Screenshot: BPM analysis
-
-!BPM analysis
+<img width="700" src="./assets/avg-bpm.png" alt="sql code of bpm analysis">
 
 ### Musical Key and Mode
 
@@ -88,9 +85,8 @@ Major mode is more common than minor mode, appearing in 64 out of the 100 tracks
 
 This suggests that major-mode compositions are relatively common in this group. However, a major mode does not necessarily mean a song sounds happy, just as a minor mode does not necessarily make a song sound sad.
 
-Screenshot: Key and mode distribution
-
-!Key and mode analysis
+<img width="700" src="./assets/most-used-key.png" alt="sql code of musical key analysis">
+<img width="700" src="./assets/most-used-mode.png" alt="sql code of musical mode analysis">
 
 ### Energy and Danceability
 
@@ -102,9 +98,7 @@ From a music production perspective, this is an interesting observation because 
 
 However, these averages alone do not establish whether energy and danceability are correlated or whether either feature contributes to higher streaming numbers.
 
-Screenshot: Energy and danceability analysis
-
-!Energy and danceability
+<img width="700" src="./assets/avg-energy-&-avg-dance.png" alt="sql code of musical energy analysis">
 
 ### Acousticness and Liveness
 
@@ -114,9 +108,7 @@ These relatively low averages suggest that the tracks tend to have lower acousti
 
 This may be consistent with a tendency toward studio-produced music rather than predominantly acoustic or live-performance recordings. However, these features alone cannot establish how a track was produced or recorded.
 
-Screenshot: Acousticness and liveness analysis
-
-!Acousticness and liveness
+<img width="700" src="./assets/avg-acoustic-&-avg-liveness.png" alt="sql code of musical liveness analysis">
 
 ### Instrumentalness
 
@@ -126,9 +118,7 @@ This suggests that instrumentalness scores are very low across the selected trac
 
 This result should therefore be interpreted as a characteristic of the dataset's instrumentalness scores rather than definitive proof that all 100 tracks contain vocals.
 
-Screenshot: Instrumentalness analysis
-
-!Instrumentalness analysis
+<img width="700" src="./assets/avg-instrumentalness.png" alt="sql code of intrumentalness analysis">
 
 ### Valence
 
@@ -136,25 +126,8 @@ The average valence is 51%, which is close to the midpoint of the scale.
 
 This suggests that the group does not have an especially high or low average valence score. However, the average alone cannot tell us how many tracks have positive or negative emotional qualities, since valence is a continuous audio feature rather than a direct classification of emotion.
 
-Screenshot: Valence analysis
+<img width="700" src="./assets/avg-valence.png" alt="sql code of musical valence analysis">
 
-!Valence analysis
-
-## Relationships Between Audio Features
-
-Based on the initial analysis, I became interested in two possible relationships:
-
-Energy and danceability: Both features have relatively high averages in the selected group.
-Acousticness and liveness: Both features have relatively low averages.
-These observations led me to investigate whether the features are correlated.
-
-However, similar averages do not necessarily indicate correlation. To evaluate these relationships, correlation coefficients or a correlation heatmap would be needed.
-
-This is an important distinction: the goal is not only to identify patterns but also to determine whether those patterns are supported by the data.
-
-Screenshot: Audio feature correlation heatmap
-
-!Audio feature correlation heatmap
 
 ## Key Takeaways
 
@@ -187,9 +160,7 @@ These limitations mean that the results should be treated as exploratory observa
 
 The final dashboard brings the key findings together in one place, providing an overview of the most-streamed tracks and their audio characteristics.
 
-Screenshot: Final Spotify analysis dashboard
-
-!Final Spotify analysis dashboard
+<img src="./assets/dashboard.png" alt="Dashboard">
 
 ## Conclusion
 
@@ -205,8 +176,8 @@ As a music producer, I find this process valuable because it allows me to approa
 
 ## Tools and Technologies
 
-Dataset: Spotify dataset from Kaggle
-Data preparation and analysis: [Add your tools here]
-Data visualization: [Add your tools here]
-Dashboard: [Add your dashboard tool here]
+- **Dataset:** Spotify dataset from Kaggle
+- **Data preparation and analysis:** Excel, Postgresql
+- **Data visualization:** Tableau
+
 This project is an exploratory analysis of the audio characteristics of the 100 most-streamed tracks in the selected dataset. Its purpose is to identify patterns and generate questions for further investigation, rather than to establish a definitive formula for streaming success.
